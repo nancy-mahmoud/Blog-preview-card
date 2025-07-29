@@ -93,6 +93,7 @@ body{
 /*|| GENERAL STYLES ||*/
 .blog-container{
     background: var(--CLR-WHITE);
+    border: 1px solid black;
 }
 .blog-title{
     cursor: pointer;
@@ -119,7 +120,7 @@ body{
     margin-top: 1rem;
 }
 
-/*|| GENERAL STYLES ||*/
+/*|| UTILITY CLASSES ||*/
 .no-wrap{
     white-space: nowrap;
 }
