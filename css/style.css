@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* || VARIABLES || */
+:root{
+    /*primary*/
+    --CLR-YELLOW:  hsl(47, 88%, 63%);
+    
+    /*neutral*/
+    --CLR-WHITE: hsl(0, 0%, 100%);
+    --CLR-GRAY-500: hsl(0, 0%, 42%);
+    --CLR-GRAY-950: hsl(0, 0%, 7%);
+
+    /*fonts*/
+    --FS-MAIN: 16px;
+    --FF-MAIN: "Figtree" , sans-serif;
+    --FW-BOLD: 600;
+    --FW-BOLDER: 800;
+}
+
+/* || RESET || */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    line-height: 1.1;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+::selection{
+    color:white;
+    background: black;
+}
+
+body{
+    font-family: var(--FF-MAIN);
+    font-size: var(--FS-MAIN);
+    color: var(--CLR-GRAY-950);
+    background: var(--CLR-YELLOW);
+}
+
+/* || TYPOGRAPHY || */ 
+
+.blog-category{
+    color: black;
+    background: var(--CLR-YELLOW);
+    font-weight: var(--FW-BOLDER);
+    padding: .4rem .8rem ;
+    border-radius: .2rem;
+}
+.blog-meta{
+    font-style: 14px;
+    color: var(--CLR-GRAY-950);
+}
+.blog-title{
+    color: var(--CLR-GRAY-950);
+    font-weight: var(--FW-BOLDER);
+    font-size: 1.5em;
+}
+.author-name{
+    color: var(--CLR-GRAY-950);
+    font-weight: var(--FW-BOLDER);
+}
+.blog-exert{
+    color: var(--CLR-GRAY-500);
+}
+
+/*|| LAYOUT STYLES ||*/
+
+.wrapper{
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.author-data{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.blog-category{
+    display: inline-block;
+}
+
+
+/*|| GENERAL STYLES ||*/
+.blog-container{
+    background: var(--CLR-WHITE);
+}
+.blog-title{
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+.blog-title:hover{
+    color: var(--CLR-YELLOW);
+}
+.author-img{
+    max-width: 2.75rem;
+}
+.blog-image{
+    border-radius: .5rem;
+}
+.blog-container{
+    max-width: 22em;
+    padding: 1.25rem;
+    margin: 0 1.25rem;
+    border-radius: 1rem;
+    background: var(--CLR-WHITE);
+    box-shadow: 8px 8px var(--CLR-GRAY-950);
+}
+.blog-container > * + *{
+    margin-top: 1rem;
+}
+
+/*|| GENERAL STYLES ||*/
+.no-wrap{
+    white-space: nowrap;
+}
